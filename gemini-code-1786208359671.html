@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia dos Pais - Uma Viagem Espacial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow-x: hidden;
+        }
+
+        /* Fundo com efeito de estrelas */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: transparent url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/123163/stars.png') repeat top center;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #4facfe;
+            text-shadow: 0 0 15px rgba(79, 172, 254, 0.6);
+            letter-spacing: 2px;
+        }
+
+        header p.subtitle {
+            font-size: 1.2rem;
+            color: #a1c4fd;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            font-size: 1.6rem;
+            color: #00f2fe;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #e0e6ed;
+        }
+
+        .planet-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        footer {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.4);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .final-message {
+            font-size: 2rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff0844, #ffb199);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(255, 8, 68, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .final-message {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <div class="container">
+        <header>
+            <span class="planet-icon">🚀</span>
+            <h1>Feliz Dia dos Pais!</h1>
+            <p class="subtitle">Uma jornada inesquecível pelo infinito do universo</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>🌌 Uma Viagem Entre as Estrelas</h2>
+                <p>
+                    Se eu pudesse escolher qualquer lugar para visitar, gostaria de embarcar em uma verdadeira viagem espacial ao seu lado. Navegaríamos através de todas as estrelas e galáxias, descobrindo os segredos do cosmos e vendo de perto a grandeza do universo.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>👽 Novos Mundos e Vida Extraterrestre</h2>
+                <p>
+                    Imagine só explorar planetas distantes, caminhar sob céus de cores diferentes e conhecer os seres vivos de outros mundos! Seria uma aventura incrível cruzar a Via Láctea e explorar o desconhecido com o melhor companheiro de viagem que eu poderia ter.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>✨ O Maior Guia do Universo</h2>
+                <p>
+                    Mesmo com tantas galáxias e mistérios no espaço, a melhor parte de qualquer jornada é ter você ao meu lado. Obrigado por me ensinar a olhar para o alto e por me mostrar que não há limites para onde podemos chegar.
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p class="final-message">te amo pai ate outro planeta</p>
+    </footer>
+
+</body>
+</html>
